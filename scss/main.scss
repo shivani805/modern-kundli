@@ -14,9 +14,6 @@ body {
   height: 100vh;
   text-align: center;
   font-size: 2.5rem;
-  @include mobile {
-    background-image: url("../images/mobile-image.png");
-  }
 }
 .logo {
   width: 100px;
@@ -43,11 +40,6 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
 
-  @include mobile {
-    font-size: 0.98rem;
-    padding: 13px 20px;
-    border: 1px solid red;
-  }
 }
 .footer-section {
   margin: 100px auto 0 auto;
@@ -56,11 +48,7 @@ button {
     margin-bottom: 30px;
   }
 }
-@mixin mobile {
-  @media (max-width: $mobile) {
-    @content;
-  }
-}
+
 @media (max-width: $mobile) {
   button {
     font-size: 0.98rem;

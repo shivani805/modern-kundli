@@ -57,3 +57,23 @@ button {
 .footer-section .powered {
   margin-bottom: 30px;
 }
+
+@media (max-width: 600px) {
+  button {
+    font-size: 0.98rem;
+    padding: 13px 20px;
+  }
+  body {
+    background-image: url("../images/mobile-image.png");
+  }
+  p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  .footer-content {
+    margin: 50px auto 0 auto;
+  }
+}
