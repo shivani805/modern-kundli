@@ -9,6 +9,8 @@ body {
   background-image: url("../images/desktop-image.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   display: flex;
   justify-content: center;
@@ -16,6 +18,7 @@ body {
   flex-direction: column;
   height: 100vh;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .logo {
@@ -24,20 +27,20 @@ body {
 
 h1 {
   font-weight: 800;
-  font-size: 2.5rem;
-  margin: 9rem 0 0 0;
+  margin-top: 10rem;
   padding: 0;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 2.5rem;
   font-weight: 800;
+  line-height: 1;
   margin: 10px auto 32px auto;
 }
 
 button {
-  width: 50%;
-  padding: 13px 10px;
+  max-width: 550px;
+  padding: 13px 50px;
   border-radius: 50px;
   background-color: yellow;
   outline: 0;
@@ -46,35 +49,11 @@ button {
   cursor: pointer;
 }
 
-.footer-content {
-  width: 30%;
+.footer-section {
   margin: 100px auto 0 auto;
   font-size: 1rem;
 }
 
-.footer-content .powered {
+.footer-section .powered {
   margin-bottom: 30px;
-}
-
-@media (max-width: 800px) {
-  button {
-    font-size: 1rem;
-    width: 80%;
-  }
-  body {
-    background-image: url("../images/mobile-image.png");
-  }
-  p {
-    font-size: 1.4rem;
-    line-height: 1;
-    width: 100%;
-  }
-  h1 {
-    font-size: 2.3rem;
-  margin: 7rem 0 0 0;
-
-  }
-  .footer-content {
-    margin: 50px auto 0 auto;
-  }
 }
